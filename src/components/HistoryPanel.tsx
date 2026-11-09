@@ -54,7 +54,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
     <div
       className={`w-full max-w-[340px] sm:max-w-[360px] h-[360px] sm:h-[390px] md:h-[420px] p-4 sm:p-5 rounded-3xl border flex flex-col justify-between backdrop-blur-md transition-all duration-300 ${theme.cardClass}`}
     >
-      <div className="flex flex-col h-full overflow-hidden">
+      <div className="flex flex-col h-full">
         {/* Header */}
         <div
           className={`flex items-center justify-between pb-3.5 border-b ${theme.panelHeaderClass}`}
@@ -136,7 +136,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
         )}
 
         {/* List of winners */}
-        <div className="custom-scroll mt-3 flex-1 overflow-y-auto min-h-0 flex flex-col gap-2 pr-1">
+        <div className="custom-scroll mt-3 flex-1 min-h-0 flex flex-col gap-2 pr-1">
           {history.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-center opacity-50 py-10">
               <span className="text-4xl mb-2">🎯</span>
@@ -166,7 +166,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
                       : ''
                   }`}
                 >
-                  <div className="flex items-center gap-2.5 overflow-hidden">
+                  <div className="flex items-center gap-2.5 ">
                     <span className="font-mono font-bold opacity-60 text-[11px] flex-shrink-0">
                       #{item.round}
                     </span>
