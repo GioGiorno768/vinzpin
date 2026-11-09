@@ -1,0 +1,6 @@
+{
+  "name": "Lucky Spin Wheel",
+  "description": "Roda putar keberuntungan interaktif dengan riwayat pemenang, tema visual dinamis, efek audio realistis, dan pengaturan putaran lengkap.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
